@@ -1,0 +1,86 @@
+/* ============================================================
+   Common style for all pages of the EC site (Lesson 10 - 16)
+   Classes used in JSP: "error", "success" and "customer"
+   ============================================================ */
+
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    color: #333333;
+}
+
+h1 {
+    color: #1f4e78;
+}
+
+h2 {
+    color: #1f4e78;
+    font-size: 20px;
+}
+
+a {
+    color: #1f4e78;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+th, td {
+    border: 1px solid #999999;
+    padding: 8px 16px;
+}
+
+th {
+    background-color: #1f4e78;
+    color: #ffffff;
+}
+
+/* Form */
+label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+input, select {
+    padding: 6px 8px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+}
+
+button, input[type="submit"] {
+    padding: 6px 16px;
+    border: 1px solid #1f4e78;
+    border-radius: 3px;
+    background-color: #1f4e78;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Messages */
+.error {
+    color: #b42318;
+}
+
+.success {
+    color: #1e7a46;
+    font-weight: bold;
+}
+
+/* Customer pages (Shop, Product Detail, Order): write <body class="customer"> */
+/* Admin pages use the navy color above, so no class is needed */
+.customer h1, .customer h2, .customer a {
+    color: #c55a11;
+}
+
+.customer th {
+    background-color: #c55a11;
+}
+
+.customer button, .customer input[type="submit"] {
+    border-color: #c55a11;
+    background-color: #c55a11;
+}
